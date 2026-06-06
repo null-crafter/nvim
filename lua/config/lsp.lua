@@ -1,4 +1,10 @@
 local servers = {
+  js_and_ts = {
+      cmd = {'typescript-language-server', '--stdio'},
+      filetypes = {'typescriptreact', 'typescript', 'javascriptreact', 'javascript', }, -- tsx, ts, js, jsx
+      root_markers = {'package.json', 'node_modules'},
+      settings = {},
+  },
   expert = {
     cmd = { 'expert', '--stdio'},
     filetypes = { 'elixir' },
@@ -6,7 +12,6 @@ local servers = {
     settings = {
     },
   },
-
   pyright = {
     cmd = { 'basedpyright-langserver', '--stdio' },
     filetypes = { 'python' },
