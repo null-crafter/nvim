@@ -11,6 +11,7 @@ local servers = {
                     allFeatures = true,
                     buildScripts = { enable = true },
                 },
+                check = { command = 'clippy' },
                 procMacro = { enable = true },
                 diagnostics = { enable = true },
 
